@@ -103,7 +103,7 @@ const Wallet = () => {
                     <div>${elem.priceUsd.toFixed(2)}</div>
 
                     <div
-                        style={{ "color": elem.changePercent24Hr < 0 ? "red" : "green" }}>
+                        style={{ "color": elem.changePercent24Hr < 0 ? "#FF3131" : "#66FF00" }}>
                         {elem.changePercent24Hr.toFixed(2)}%
                     </div>
                     <div className="marketCap">${parseMoneyValue(elem.marketCapUsd)}</div>
@@ -114,7 +114,7 @@ const Wallet = () => {
                         data-name={elem.id}
                         onClick={handleRemoveFromWallet}
                         className="deleteCoinFromWalletBtn"
-                        style={{ "color": "red", "fontSize": "1.5rem" }} />
+                        style={{ "color": "#FF3131", "fontSize": "1.5rem" }} />
 
                 </div>
             )}

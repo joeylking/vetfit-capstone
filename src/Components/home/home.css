@@ -5,7 +5,8 @@
 }
 
 .coinGridHeaderContainer {
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid white;
+    color: white;
 }
 
 .coinGridHeaderContainer,
@@ -15,15 +16,15 @@
 }
 
 .individualCoinContainer {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.35);
     align-items: center;
     padding: .25rem;
     border-radius: 5px;
-    box-shadow: 2px 2px 2px #333;
+    color: white;
 }
 
 .individualCoinContainer:hover {
-    background-color: whitesmoke;
+    background-color: rgba(255, 255, 255, 0.18);
     cursor: default;
 }
 
@@ -34,6 +35,9 @@
 .imgSymbolCointainer {
     display: flex;
     gap: .5rem;
+    align-items: center;
+    padding-top: .08rem;
+    padding-left: .05rem;
 }
 
 .symbol {
@@ -48,7 +52,7 @@
     padding: .25rem;
     background-color: white;
     border-radius: 5px;
-    width: 50%;
+    width: 25%;
     align-self: center;
     justify-self: center
 }
@@ -69,7 +73,7 @@
 }
 
 .addToWathListIcon {
-    color: darkgoldenrod;
+    color: #ffd900;
     align-self: center;
     font-size: 1.5rem;
     transition: all .2s;

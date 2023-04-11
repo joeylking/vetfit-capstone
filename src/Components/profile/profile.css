@@ -9,6 +9,7 @@
         "posts bio"
         "comments coins";
     /* min-height: 80vh; */
+    color: white;
 }
 
 .profilePageHeader {
@@ -25,6 +26,7 @@
 
 .userBioContainer {
     grid-area: bio;
+    color: white;
 }
 
 .myProfileCoinsContainer {
@@ -41,6 +43,7 @@
 .userProfileCoinsContainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    color: white;
 }
 
 .userProfileCoinsContainer.headers {
@@ -58,7 +61,7 @@
     flex-direction: column;
     gap: .5rem;
     padding: .5rem;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.423);
     border-radius: 5px;
     border: 1px solid #1115;
     box-shadow: 2px 2px 2px #3333;

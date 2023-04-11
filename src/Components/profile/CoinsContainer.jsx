@@ -38,7 +38,7 @@ const CoinsContainer = () => {
                         </div>
 
                         <div className='profileCoinChange'
-                            style={{ "color": elem.changePercent24Hr < 0 ? "red" : "green" }}>
+                            style={{ "color": elem.changePercent24Hr < 0 ? "#FF3131" : "#66FF00" }}>
                             {elem.changePercent24Hr.toFixed(2)}%
                         </div>
 

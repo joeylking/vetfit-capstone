@@ -6,6 +6,7 @@ import { addCoinToWallet } from "../../State/wallet/savedCoins"
 import { fetchAllSavedCoinsByUser } from "../../State/wallet/savedCoins"
 import { fetchUserProfile } from "../../State/profile/userProfile"
 import { FcSearch } from "react-icons/fc"
+import { RiSearchLine } from 'react-icons/ri'
 import { AiFillStar, AiOutlineStar } from "react-icons/ai"
 import Pagination from "../templates/Pagination"
 import { parseMoneyValue, getImg } from "./helperMethods"
@@ -78,7 +79,7 @@ const Home = () => {
     return (
         <div className="allCoinsContainer">
             <div className="filterCoinsContainer">
-                <FcSearch style={{ fontSize: "1.5rem" }} />
+                <RiSearchLine className='searchIcon' style={{ fontSize: "1.5rem" }} />
                 <input
                     className="filterCoinsInput"
                     // type="search"
@@ -111,7 +112,7 @@ const Home = () => {
 
                     <div>${elem.priceUsd.toFixed(2)}</div>
 
-                    <div style={{ "color": elem.changePercent24Hr < 0 ? "red" : "green" }}>{elem.changePercent24Hr.toFixed(2)}%</div>
+                    <div style={{ "color": elem.changePercent24Hr < 0 ? "#FF3131" : "#66FF00" }}>{elem.changePercent24Hr.toFixed(2)}%</div>
                     <div className="marketCap">${parseMoneyValue(elem.marketCapUsd)}</div>
                     <div className="volume">${parseMoneyValue(elem.volumeUsd24Hr)}</div>
                     <div className="supply">${parseMoneyValue(elem.supply)}</div>

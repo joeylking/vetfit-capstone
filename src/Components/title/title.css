@@ -1,21 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 .navbarContainer {
-    background-color: darkblue;
+
     color: white;
-    padding: .25rem 1rem 1rem;
+    padding: .05rem 1rem 1rem;
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    align-items: center;
     position: sticky;
     top: 0;
     z-index: 1;
 }
 
+.navLogoTitle {
+    display: flex;
+    align-items: center;
+}
+
+.navLogo {
+    padding-top: 0.5rem;
+}
+
+.navLogo:hover {
+    cursor: pointer;
+}
+
 .navTitle {
-    font-family: 'Playfair Display', sans-serif;
-    font-size: 3rem;
+    font-size: 2.2rem;
+    padding-left: 0.5rem;
 }
 
 .firstLetter {
@@ -31,12 +45,13 @@
     display: flex;
     gap: .5rem;
     align-items: center;
+    justify-content: left;
 }
 
 .navLink {
     color: #eee;
     text-decoration: none;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
 }
 
 .navLink:hover {
@@ -58,6 +73,7 @@
     align-items: center;
     justify-content: center;
     font-family: 'Kalam', sans-serif;
+    font-size: 1.2rem;
 }
 
 .userNameLogOutBtnContainer {
@@ -111,16 +127,14 @@
 }
 
 .navBtn {
-    border: none;
     outline: none;
     font-family: inherit;
-    padding: .25rem .5rem;
+    padding: .09rem .35rem;
     border-radius: 5px;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: bold;
     border: 1px solid #0AF;
     background-color: inherit;
-
     transition: all .2s ease-in-out;
 }
 

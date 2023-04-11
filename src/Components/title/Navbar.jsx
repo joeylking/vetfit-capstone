@@ -6,6 +6,7 @@ import LogOutBtn from "./LogOutBtn";
 import { GiHamburgerMenu } from "react-icons/gi"
 import "./title.css"
 import HamburgerMenu from "./HamburgerMenu";
+import logo from "../../Assets/CryptoEagle.png"
 
 const Navbar = () => {
     const navigate = useNavigate()
@@ -29,9 +30,14 @@ const Navbar = () => {
 
     return (
         <div className="navbarContainer">
+            <div className="navLogoTitle">
+            <div className="navLogo">
+            <img src={logo} height="55" onClick={() => navigate("/")} />
+            </div>
             <h1 className="navTitle" onClick={() => navigate("/")}>
-                <span className="firstLetter">C</span>rypto <span className="firstLetter">E</span>agle
+                CRYPTO EAGLE
             </h1>
+            </div>
             {location.pathname !== "/login" && location.pathname !== "/create-acc" &&
                 <>
                     <div className="navLinksContainer standardMenu">
